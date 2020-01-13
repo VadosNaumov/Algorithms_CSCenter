@@ -17,7 +17,7 @@ class InversionsNumberTest {
         iN.separateSort(first);
         long actual = iN.result;
         long expected = 12;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -27,7 +27,7 @@ class InversionsNumberTest {
         iN.separateSort(first);
         long actual = iN.result;
         long expected = 2;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -37,7 +37,7 @@ class InversionsNumberTest {
         iN.separateSort(first);
         long actual = iN.result;
         long expected = 8;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -47,7 +47,7 @@ class InversionsNumberTest {
         iN.separateSort(first);
         long actual = iN.result;
         long expected = 10;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -57,7 +57,7 @@ class InversionsNumberTest {
         iN.separateSort(first);
         long actual = iN.result;
         long expected = 4;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -67,7 +67,7 @@ class InversionsNumberTest {
         iN.separateSort(first);
         long actual = iN.result;
         long expected = 11;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -77,7 +77,7 @@ class InversionsNumberTest {
         iN.separateSort(first);
         long actual = iN.result;
         long expected = 12;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -87,7 +87,7 @@ class InversionsNumberTest {
         iN.separateSort(first);
         long actual = iN.result;
         long expected = 8;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -97,6 +97,6 @@ class InversionsNumberTest {
         iN.separateSort(first);
         long actual = iN.result;
         long expected = 10;
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

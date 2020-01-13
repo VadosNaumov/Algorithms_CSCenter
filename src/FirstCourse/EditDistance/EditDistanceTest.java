@@ -13,7 +13,7 @@ class EditDistanceTest {
         String se = "ports";
         int expected = 3;
         int actual = eD.run(fi, se);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -23,7 +23,7 @@ class EditDistanceTest {
         String se = "sh";
         int expected = 0;
         int actual = eD.run(fi, se);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -33,7 +33,7 @@ class EditDistanceTest {
         String se = "shlopq";
         int expected = 4;
         int actual = eD.run(fi, se);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -43,7 +43,7 @@ class EditDistanceTest {
         String se = "123shas";
         int expected = 6;
         int actual = eD.run(fi, se);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -53,6 +53,6 @@ class EditDistanceTest {
         String se = "five";
         int expected = 4;
         int actual = eD.run(fi, se);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }

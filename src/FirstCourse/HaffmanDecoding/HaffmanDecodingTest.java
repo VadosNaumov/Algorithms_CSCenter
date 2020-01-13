@@ -19,7 +19,7 @@ class HaffmanDecodingTest {
         String cipher = "01001100100111";
         String actual = new HaffmanDecoding().decoding(alphabet, cipher);
         String expected = "abacabad";
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -29,7 +29,7 @@ class HaffmanDecodingTest {
         String cipher = "0";
         String actual = new HaffmanDecoding().decoding(alphabet, cipher);
         String expected = "a";
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -39,7 +39,7 @@ class HaffmanDecodingTest {
         String cipher = "000";
         String actual = new HaffmanDecoding().decoding(alphabet, cipher);
         String expected = "aaa";
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -51,7 +51,7 @@ class HaffmanDecodingTest {
         String cipher = "1011001011";
         String actual = new HaffmanDecoding().decoding(alphabet, cipher);
         String expected = "bcbabcb";
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -63,6 +63,6 @@ class HaffmanDecodingTest {
         String cipher = "0001111111";
         String actual = new HaffmanDecoding().decoding(alphabet, cipher);
         String expected = "cbaaaaaa";
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }
