@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class LargeFibonacci {
 
-    private static final int MOD = (int) (1e9);
-
-    private int lastDigitFibonacci(int n) {
+    public int lastDigitFibonacci(int n) {
 
         int a = 0;
         int b = 1;
@@ -18,15 +16,12 @@ public class LargeFibonacci {
         return a;
     }
 
-    public void run(int n) {
-        System.out.println(n + " Last digit : " + lastDigitFibonacci(n));
-    }
-
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Fibonacci number");
-        new LargeFibonacci().run(scanner.nextInt());
+        int res = new LargeFibonacci().lastDigitFibonacci(scanner.nextInt());
+        System.out.println(res);
 
     }
 }

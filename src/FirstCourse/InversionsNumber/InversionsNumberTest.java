@@ -1,10 +1,6 @@
 package FirstCourse.InversionsNumber;
 
-import FirstCourse.HaffmanDecoding.HaffmanDecoding;
 import org.junit.jupiter.api.Test;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 

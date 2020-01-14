@@ -43,7 +43,5 @@ public class PointsInSegments {
         for (Object e : result.toArray()) {
             System.out.printf("%d ", e);
         }
-        System.out.println();
-        System.out.println(result);
     }
 }
