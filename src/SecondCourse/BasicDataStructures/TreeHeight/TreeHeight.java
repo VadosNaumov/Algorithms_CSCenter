@@ -3,17 +3,13 @@ package SecondCourse.BasicDataStructures.TreeHeight;
 import java.util.*;
 
 public class TreeHeight {
-    public void run() {
 
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        List<Integer> list = new ArrayList<>();
+    public Integer run(int n, List<Integer> list) {
+
         List<Integer> find = new ArrayList<>();
         int t;
-        int k = 0;
-        for (int i = 0; i < n; i++) {
-            list.add(scanner.nextInt());
-        }
+        int k;
+
         for (int i = 0; i < n; i++) {
             t = 1;
             k = i;
@@ -28,10 +24,19 @@ public class TreeHeight {
         }
 
         Set<Integer> res = new TreeSet<>(find);
-        System.out.println(((TreeSet<Integer>) res).last());
+        return  ((TreeSet<Integer>) res).last();
     }
 
     public static void main(String[] args) {
-        new TreeHeight().run();
+
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            list.add(scanner.nextInt());
+        }
+
+        Integer result = new TreeHeight().run(n, list);
+        System.out.println(result);
     }
 }

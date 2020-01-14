@@ -8,7 +8,6 @@ import java.util.List;
 
 public class BuildingHeap {
 
-    String[] line;
     Integer size;           // размер кучи
     int temp;               // временная переменная
     int minIndex;           // минимальный i
@@ -66,23 +65,28 @@ public class BuildingHeap {
         }
     }
 
-    public void run() throws IOException {
+    public StringBuilder run(Integer n, String str) {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        size = Integer.parseInt(br.readLine());
+        String[] line = str.split(" ");
+        Integer size = n;
         fi = new ArrayList<>(size);
 
-        line = br.readLine().split(" ");
         for (int i = 0; i < size; i++) {
             fi.add(Integer.parseInt(line[i]));
         }
 
         buildHeap(fi);
         System.out.print(count);
-        System.out.print(sb.toString());
+        return sb;
     }
 
     public static void main(String[] args) throws IOException {
-        new BuildingHeap().run();
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        Integer n = Integer.parseInt(br.readLine());
+        String line = br.readLine();
+
+        StringBuilder result = new BuildingHeap().run(n, line);
+        System.out.println(result.toString());
     }
 }

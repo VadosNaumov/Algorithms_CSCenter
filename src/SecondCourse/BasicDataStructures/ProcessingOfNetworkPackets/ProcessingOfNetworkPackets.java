@@ -9,12 +9,14 @@ import java.util.Deque;
 public class ProcessingOfNetworkPackets {
 
     public static void main(String[] args) throws IOException {
+
         int size; // размер буфера
         int k;    // число пакетов
         int time = 0;   // время текущее
         int occup = 0; // занятость буфера
         int ar;   // время начала пакета
         int du; // продолжительность
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] line;
         line = br.readLine().split(" ");
@@ -22,6 +24,7 @@ public class ProcessingOfNetworkPackets {
         k = Integer.parseInt(line[1]);
         StringBuilder sb = new StringBuilder();
         Deque<Integer> q = new ArrayDeque<>(size);
+
         if (k == 0) {
             System.out.println();
         } else {
